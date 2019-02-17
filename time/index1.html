@@ -2,18 +2,236 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-<!--
-Created using JS Bin
-http://jsbin.com
+<style>
+9
 
-Copyright (c) 2019 by sounisi5011 (http://jsbin.com/yiriji/3/edit)
+ .container {
+    display: grid;
+    grid-template-columns: 10％ 80％ 10％;
+    grid-template-rows: 2fr 100px 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    justify-items: stretch;
+    align-items: ストレッチ;
+ }
+    display: grid;
+    grid-template-columns: 10％ 80％ 10％;
+    grid-template-rows: 2fr 100px 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    justify-items: stretch;
+    align-items: 終わり;
+ }
+    display: grid;
+    grid-template-columns: 10％ 80％ 10％;
+    grid-template-rows: 2fr 100px 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    justify-items: stretch;
+    align-items: ストレッチ;
+ }
+    display: grid;
+    grid-template-columns: 10％ 80％ 10％;
+    grid-template-rows: 2fr 100px 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: ストレッチ;
+ }
+    display: grid;
+    grid-template-columns: 10％ 80％ 10％;
+    grid-template-rows: 2fr 100px 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: センター;
+ }
+    display: grid;
+    grid-template-columns: 10％ 80％ 10％;
+    grid-template-rows: 2fr 100px 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+    display: grid;
+    grid-template-columns: 10％ 80％ 10％;
+    grid-template-rows: 2fr 100px 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+    display: grid;
+    grid-template-columns: 10％ 80％ 10％;
+    grid-template-rows: 2fr 100px 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+    display: grid;
+    grid-template-columns: 10％ 80％ 10％;
+    grid-template-rows: 2fr 100px 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+    display: grid;
+    grid-template-columns: 10％ 80％ 10％;
+    grid-template-rows: 2fr 100px 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+    display: grid;
+    grid-template-columns: 10％ 80％ 10％;
+    grid-template-rows: 2fr 100px 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+    display: grid;
+    grid-template-columns: 10％ 80％ 10％;
+    grid-template-rows: 2fr 100px 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+    display: grid;
+    grid-template-columns: 10％ 80％ 10％;
+    grid-template-rows: 2fr 100px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+    display: grid;
+    grid-template-columns: 10％ 503％ 10％;
+    grid-template-rows: 2fr 100px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+    display: grid;
+    grid-template-columns: 10％ 500％ 10％;
+    grid-template-rows: 2fr 100px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+    display: grid;
+    grid-template-columns: 10fr 500％ 10％;
+    grid-template-rows: 2fr 100px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+    display: grid;
+    grid-template-columns: 10fr 500％ 10fr;
+    grid-template-rows: 2fr 100px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+    display: grid;
+    grid-template-columns: 10fr 500fr 10fr;
+    grid-template-rows: 2fr 100px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+    display: grid;
+    grid-template-columns: 10fr 30fr 10fr;
+    grid-template-rows: 2fr 100px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+    display: grid;
+    grid-template-columns: fr 30fr 10fr;
+    grid-template-rows: 2fr 100px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+    display: grid;
+    grid-template-columns: fr 30fr 1fr;
+    grid-template-rows: 2fr 100px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+    display: grid;
+    grid-template-columns: 1fr 30fr 1fr;
+    grid-template-rows: 2fr 100px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 100px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 100px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 100px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 100px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    grid-template-rows: 2fr 100px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+  #itemE {
+    background: #D81159;
+}
 
-Released under the MIT license: http://jsbin.mit-license.org
--->
+</style>
 <meta name="robots" content="noindex">
   <title>Now Time Is ...</title>
 </head>
 <body>
+  <div id="itemE">E</div>
   <div id="clock"></div>
 <script>
 (function () {
