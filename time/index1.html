@@ -73,7 +73,8 @@ body {
              */
             setText(
                 clockE,
-                datePrintf('%y年%m月%d日<html><body><br></body></html>%h時%i分%s.%u秒', date)
+                datePrintf('%y年%m月%d日', date)
+		datePrintf('%h時%i分%s.%u秒', date)
             );
 
             /**
