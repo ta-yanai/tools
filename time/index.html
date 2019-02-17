@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <script src="bower_components/superagent/superagent.js"></script>
+</head>
+<body>
+    <p id="timeAmount"></p>
+    <script>
+        var request = window.superagent;
+        var sendTime = new Date().getTime();
+        request.get("https://ntp-a1.nict.go.jp/cgi-bin/json")
+                .end(function(res){
+                    var timeobj = res.body;
+                    var endTime = new Date().getTime();
+                    console.log("latency: " + (endTime - sendTime) / 2 + "ms");
+                    var fixedTime = parseInt(timeobj.st * 1000 + (endTime - sendTime) / 2, 10);
+                    var localTime = new Date().getTime()
+                    var offset = fixedTime - localTime;
+                    console.log("fixedTime: " + fixedTime);
+                    console.log("localTime: " + localTime);
+                    console.log("offset: " + offset);
+                    setInterval(function(){
+                        var el = document.querySelector("#timeAmount");
+                        el.innerText = new Date(new Date().getTime() + offset);
+                    }, 10);
+                });
+    </script>
+</body>
+</html>
