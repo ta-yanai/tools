@@ -22,7 +22,7 @@ body {
 </head>
 <body>
 <div class="box">
-  <div id="clock"></div>
+  <center><div id="clock"></div></center>
 </div>
 <script>
 (function () {
@@ -70,7 +70,7 @@ body {
              */
             setText(
                 clockE,
-                datePrintf('%y年%m月%d日 %h時%i分%s.%u秒', date)
+                datePrintf('%y年%m月%d日<br>%h時%i分%s.%u秒', date)
             );
 
             /**
