@@ -4,7 +4,10 @@
 <meta charset="UTF-8" />
 <meta name="robots" content="noindex">
 <title>Top Page</title>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 </head>
+<script src="js/jquery-1.5.min.js"></script>
 
 <style>
 html {
@@ -22,6 +25,24 @@ body {
 p {text-align: center}
 </style>
 
+<script>
+  $(function(){
+   //ページ内のaタグ群を取得。aTagsに配列として代入。
+    var aTags = $('a'); 
+       //全てのaタグについて処理
+	aTags.each(function(){
+          //aタグのhref属性からリンク先url取得
+	  var url = $(this).attr('href');
+　　　//念のため、href属性は削除
+	  $(this).removeAttr('href');
+          //クリックイベントをバインド
+	  $(this).click(function(){
+	    location.href = url;
+	  });
+    });
+  });
+</script>
+	
 <body>
 <div class="box">
 ・<a href="/d&t/">Now Date & Time Is ...</a><br>
