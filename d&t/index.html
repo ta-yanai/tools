@@ -26,11 +26,25 @@ body {
 p {text-align: center}
 p.Loading {font-size: 30px; }
 span.DaT {font-size: 60px; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
 </style>
 
 <body>
 <div class="box">
-<span class="DaT">
+<span class="DaT fadeIn">
   <div id="clock"><p class="Loading">Now Loading...<br>※表示が変わらない場合リロードをしてください。</p></div>
 </span>
 </div>
