@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-type" content="text/html; charset=UTF-8">
+<TITLE>簡単オンラインRSSメーカー / エラーメッセージ</TITLE>
+<STYLE type="text/css">
+  SPAN {line-height: 130%;}
+</STYLE>
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#6633FF" vlink="#990099" alink="#663333">
+
+<TABLE width="95%" align="center" border="0" cellspacing="2" cellpadding="0">
+
+<TR><TD bgcolor="#CC0000"><IMG src="spacer.gif" width="2" height="2" alt=""></TD></TR>
+
+<TR><TD bgcolor="#FFE0E0">
+<TABLE border="0" cellspacing="0" cellpadding="10">
+<TR><TD><SPAN><FONT color="#333333">
+■ <B>チャンネルのタイトルが記入されていません</B><BR>
+<BR>
+お手数ですが、<A href="#" onClick="window.close(self)">このウィンドウを閉じ</A>、再度入力し直してください。<BR>
+</FONT></SPAN></TD></TR>
+</TABLE>
+</TD></TR>
+
+<TR><TD bgcolor="#CC0000"><IMG src="spacer.gif" width="1" height="1" alt=""></TD></TR>
+
+</TABLE>
+
+<DIV align="center"><FONT color="#666666">(C)2005 NetComplex Inc. All rights reserved. </FONT></DIV>
+
+</BODY>
+</HTML>
