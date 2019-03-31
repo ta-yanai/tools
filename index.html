@@ -77,7 +77,8 @@ input {
 
 #menu_bar01:checked ~ #links01 li {
 	max-height: 46px;
-  opacity: 1;
+  opacity: 1:
+  opacity: 2;
 }
 </style>
 
@@ -91,6 +92,10 @@ input {
     <li><a href="/date/">Now Date Is ...</a></li>
     <li><a href="/time/">Now Time Is ...</a></li>
   </ul>
+  <label for="menu_bar02">▼MAPS</label>
+  <input type="radio" name="radio" id="menu_bar01" class="accordion" />
+  <ul id="links02">
+    <li><a href="/maps/">Leaflet Maps</a></li>
   </div>
 </div>
 <p>©tools.ta-yanai.com All rights reserved.</p>
